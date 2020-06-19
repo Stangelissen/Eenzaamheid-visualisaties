@@ -1,0 +1,262 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #1A181B;
+  width: 960px;
+  height: 700px;
+  margin-top: 10px;
+}
+
+.fs{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10vh;
+  border-bottom: 1px solid #999;
+}
+
+.highlight{
+  color: #f46d42;
+}
+
+#main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#sidebar {
+  float: right;
+  width: 100px;
+}
+
+#sequence {
+  width: 600px;
+  height: 70px;
+    margin-left: 60%;
+    margin-top: 3%;
+
+}
+
+#legend {
+  padding: 10px 0 0 3px;
+}
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: white;
+  text-shadow: 0.5px 0.5px 0px black;
+
+}
+
+#chart {
+  position: relative;
+  margin-left: 55%;
+  margin-top: -20%;
+
+}
+
+
+
+#chart path {
+  stroke: white;
+}
+
+#explanation {
+  position: absolute;
+  top: 260px;
+  left: 305px;
+  width: 140px;
+  text-align: center;
+  color: white;
+  z-index: -1;
+}
+
+#percentage {
+  font-size: 2.5em;
+  color: white;
+}
+
+h1{
+  line-height: .9;
+  color: white;
+  font-weight: bold;
+  font-size: 10vmin;
+  margin-top: 3%;
+  letter-spacing: -.06em;
+  text-align: left;
+  text-transform: uppercase;
+
+
+}
+
+h2{
+
+  color: white;
+  font-weight: bold;
+  font-size: 4vmin;
+  line-height: .3;
+  letter-spacing: -.06em;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+ 
+ h3{
+
+  color: white;
+  font-weight: bold;
+
+  text-align: left;
+
+
+}
+
+h4{
+    color: white;
+  font-weight: bold;
+  font-size: 2vmin;
+  line-height: .3;
+  letter-spacing: -.06em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.knop {
+  position: absolute;
+  top: 50%;
+  width: 15%;
+  text-align: center;
+
+}
+
+
+.knop2 {
+  position: absolute;
+  top: 63%;
+  width: 15%;
+ text-align: center;
+}
+
+.btn {
+  color: white;
+  border: 1px solid white;
+  padding: 20px 80px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn span {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 100;
+}
+.btn:before, .btn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.btn:before {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  background-color: white;
+  border: 1px solid white;
+  transition: -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.btn:after {
+  background-color: #f46d42;
+  border: 1px solid #f46d42;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  transition: -webkit-transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+  transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+  transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62), -webkit-transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+}
+.btn:hover:before {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.btn:hover:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  
+}
+
+.label{
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+
+
+
+.tooltip-header {
+    position: absolute;
+    pointer-events: none;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 10px 50px 10px 0px;
+    background-color: #DDD;
+
+}
+.tooltip-header ul {
+  list-style-type: none;
+
+}
+.tooltip-header ul li {
+  margin-left: 0px;
+  margin-bottom: 0;
+  color: #f46d42;
+  font-weight: bold;
+}
+
+
+
+svg.scatter{
+
+      display: inline-block;
+    margin-left: 67%;
+    margin-top: -20%;
+}
+
+
+svg.scatter{
+
+  font-size: 15px;
+
+}
